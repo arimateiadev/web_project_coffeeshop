@@ -68,8 +68,7 @@
         <section class="recipes" id="recipes">
           <h2 class="recipes__title">Receitas</h2>
           <p class="recipes__subtitle">
-            Confira algumas receitas que coletamos para<br />
-            seu lanchinho caseiro:
+            Confira algumas receitas que coletamos para seu lanchinho caseiro:
           </p>
           <div class="recipes__videos">
             <div class="recipes__video-item">
@@ -118,7 +117,68 @@
             </div>
           </div>
         </section>
-        <section class="reservation" id="reservation"></section>
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Reservar uma mesa</h2>
+          <form class="reservation__form" action="#" method="POST">
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="nome"> Nome*</label>
+              <input
+                type="text"
+                id="nome"
+                class="form__input"
+                name="name"
+                placeholder="Nome"
+                required
+              />
+              <label class="form__label" for="convidado">
+                Número de convidados*</label
+              >
+              <input
+                type="number"
+                id="convidado"
+                class="form__input"
+                placeholder="1-8"
+                name="convidado"
+                min="1"
+                max="8"
+                required
+              />
+              <label class="form__label" for="data"> Data e Hora*</label>
+              <input
+                type="datetime-local"
+                id="data"
+                name="data"
+                class="form__input"
+                required
+              />
+
+              <label class="form__label" for="email"> Seu e-mail*</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form__input"
+                placeholder="email@email.com"
+                required
+              />
+
+              <button class="form__button" type="submit">
+                Reserve uma mesa
+              </button>
+
+              <label for="termos" class="form__label form__label_type_checkbox"
+                ><input
+                  class="form__checkbox"
+                  id="termos"
+                  type="checkbox"
+                  name="termos"
+                  required
+                />
+                Eu concordo com os termos de uso
+              </label>
+            </fieldset>
+          </form>
+        </section>
       </main>
       <footer class="footer"></footer>
     </div>
